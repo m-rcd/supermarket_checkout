@@ -1,8 +1,10 @@
 class Checkout
-  attr_reader :scanned_items
+  TOTAL = 0
+  attr_reader :scanned_items, :total
 
-  def initialize
+  def initialize(total = TOTAL)
     @scanned_items = {}
+    @total = total
   end
 
   def scan(item)
@@ -11,5 +13,10 @@ class Checkout
     else
       @scanned_items.store(item.name, item.price)
     end
+  end
+
+  def total
+    @scanned_items.map { |k, v| @total += v }
+    @total
   end
 end

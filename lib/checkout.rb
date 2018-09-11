@@ -17,6 +17,6 @@ class Checkout
 
   def total
     @scanned_items.map { |k, v| @total += v }
-    @total
+    @total = sprintf('£%.2f', @total )
   end
 end

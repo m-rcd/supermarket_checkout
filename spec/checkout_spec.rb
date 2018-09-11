@@ -28,6 +28,6 @@ describe Checkout do
     checkout.scan(item1)
     checkout.scan(item2)
     checkout.scan(item3)
-    expect(checkout.total).to eq(4)
+    expect(checkout.total).to eq('£4.00')
   end
 end

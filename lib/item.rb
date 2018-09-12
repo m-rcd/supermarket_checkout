@@ -8,6 +8,6 @@ class Item
   end
 
   def show_price
-    @price = sprintf('£%.2f', price )
+    sprintf('£%.2f', price )
   end
 end

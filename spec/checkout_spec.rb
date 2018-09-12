@@ -1,11 +1,10 @@
 require 'checkout'
 
 describe Checkout do
-  let (:item1){double :item,:name => 'milk', :price => 1}
-
-  let (:item2){double :item,:name => 'bread', :price => 2}
-  let (:item3){double :item,:name => 'milk', :price => 1}
-  let (:checkout){described_class.new}
+  let (:item1) { double :item, :name => 'milk', :price => 1 }
+  let (:item2) { double :item, :name => 'bread', :price => 2 }
+  let (:item3) { double :item, :name => 'milk', :price => 1 }
+  let (:checkout) { described_class.new }
 
   context 'testing #scan method' do
     before(:each) do

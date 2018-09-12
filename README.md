@@ -5,7 +5,7 @@ Getting started
 1. Clone repository
 2. Run `Bundle install`
 3. Run `RSpec` to test code
-1. Run `rubocop` to check syntax 
+1. Run `rubocop` to check syntax
 
 
 Tasks
@@ -34,7 +34,7 @@ I would like to see all prices correctly formatted (£xx.xx)
 
 How my app would look like from a user perspective:
 ---
-```
+```rb
 [1] pry(main)> require './lib/checkout.rb'
 => true
 [2] pry(main)> require './lib/item.rb'
